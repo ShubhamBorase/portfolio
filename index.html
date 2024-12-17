@@ -10,6 +10,8 @@
     <script src="resources\js\script.js"></script>
   </head>
   <body>
+
+    <!-- Nav Bar Desktop -->
     <nav id="desktop-nav">
       <div class="logo">
         Shubham Borse
@@ -18,13 +20,16 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certification">Certifications</a></li>
+          <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     
+    <!-- Nav Bar Mobile -->
+
     <nav id="hamburger-nav">
       <div class="logo">
         Shubham
@@ -39,13 +44,16 @@
         
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#certification" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     
+    <!-- Profile Div -->
+
     <section id="profile">
       <div class="section__pic-container">
         <img src="resources\images\MonkeyDLuffy.jpg" alt="Shubham Borse profile picture" class="profile-pic"/>
@@ -54,7 +62,6 @@
       <div class="section__text">
         <p class="section__text__p1">Hello World, I'm</p>
         <h1 class="title">Shubham Borse</h1>
-        <!-- <h3 class="text-animation">And I'm a<span></span></h3> -->
         
         <div class="btn-container-1">
           <button class="btn btn-color-2" onclick="window.open('resources/Other/Shubham_Borse_Resume.pdf')">
@@ -71,10 +78,9 @@
           <img src="resources\images\github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/ShubhamBorase/'"/>
         </div>
       </div>
-      <img src="resources\images\arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#about'" />
     </section>
 
-    <!--////////////////////////////////////////////////////// -->
+    <!-- About div -->
 
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -86,12 +92,6 @@
         
         <div class="about-details-container">
           <div class="about-containers">
-            <!-- <div class="details-container">
-              <img src="resources\images\experience.png" alt="Experience icon" class="icon"/>
-              <h3>Experience</h3>
-              <p>2+ years <br>Frontend Development</p>
-            </div> -->
-            
             <div class="details-container">
               <img src="resources\images\education.png" alt="Education icon" class="icon"/>
               <h3>Education</h3>
@@ -106,8 +106,79 @@
           </div>
         </div>
       </div>
-      <img src="resources\images\arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
     </section>
+
+
+    <!-- Certification Div -->
+
+    <section id="certification">
+      <h1 class="title">Certifications</h1>
+      <div class="certification-container">
+        <div class="certification-details-container">
+          <div class="certification-containers">
+            
+            <div class="certification-details-container-internal">
+              <h3>Learn Java, Codecademy</h3>
+              <button class="btn-certificate btn-color-2" onclick="window.open('resources/Certificates/Shubham_Borse_Learn_Java_Course.pdf')">
+                View Certificate
+              </button>
+            </div>
+
+            <div class="certification-details-container-internal">
+              <h3>Learn Intermediate Java, Codecademy</h3>
+              <button class="btn-certificate btn-color-2" onclick="window.open('resources/Certificates/Shubham_Borse_Learn_Intermediate_Java_Course.pdf')">
+                View Certificate
+              </button>
+            </div>
+            
+            <div class="certification-details-container-internal">
+              <h3>Learn SQL, Codecademy</h3>
+              <button class="btn-certificate btn-color-2" onclick="window.open('resources/Certificates/Shubham_Borse_Learn_SQL_Course.pdf')">
+                View Certificate
+              </button>
+            </div>
+
+            <div class="certification-details-container-internal">
+              <h3>Learn Git & GitHub, Codecademy</h3>
+              <button class="btn-certificate btn-color-2" onclick="window.open('resources/Certificates/Shubham_Borse_Learn_Git_And_Github_Course.pdf')">
+               View Certificate
+              </button>
+            </div>
+
+            <div class="certification-details-container-internal">
+              <h3>Learn HTML, Codecademy</h3>
+              <button class="btn-certificate btn-color-2" onclick="window.open('resources/Certificates/Shubham_Borse_Learn_HTML_Course.pdf')">
+                View Certificate
+              </button>
+            </div>
+
+            <div class="certification-details-container-internal">
+              <h3>Learn the Command Line, Codecademy</h3>
+              <button class="btn-certificate btn-color-2" onclick="window.open('resources/Certificates/Shubham_Borse_Learn_The_Command_Line_Course.pdf')">
+                View Certificate
+              </button>
+            </div>
+
+            <div class="certification-details-container-internal">
+              <h3>Learn JavaScript Course, Codecademy</h3>
+              <button class="btn-certificate btn-color-2" onclick="window.open('resources/Certificates/Shubham_Borse_Learn_JavaScript_Course.pdf')">
+                View Certificate
+              </button>
+            </div>
+
+            <div class="certification-details-container-internal">
+              <h3>Learn TypeScript Course, Codecademy</h3>
+              <button class="btn-certificate btn-color-2" onclick="window.open('resources/Certificates/Shubham_Borse_Learn_TypeScript_Course.pdf')">
+                View Certificate
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exerience Div -->
     
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
@@ -132,14 +203,6 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-              
-              <!-- <article>
-                <img src="resources\images\checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article> -->
               
               <article>
                 <img src="resources\images\checkmark.png" alt="Experience icon" class="icon"/>
@@ -211,13 +274,21 @@
                 </div>
               </article>
 
+              <article>
+                <img src="resources\images\checkmark.png" alt="Experience icon" class="icon"/>
+                <div>
+                  <h3>JVM</h3>
+                  <p>Advance</p>
+                </div>
+              </article>
+
             </div>
           </div>
         </div>
       </div>
-      
-      <img src="resources\images\arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
     </section>
+
+    <!-- Projects Div -->
     
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -238,10 +309,6 @@
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ShubhamBorase/Fun_Roulette_Game'" >
                 Github
               </button>
-              
-              <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'" >
-                Live Demo
-              </button> -->
             </div>
           </div>
           
@@ -259,32 +326,13 @@
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'" >
                 Github
               </button>
-              
-              <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Live Demo
-              </button> -->
             </div>
           </div>
-          
-          <!-- <div class="details-container color-container">
-            <div class="article-container">
-              <img src="resources\images\project-3.png" alt="Project 3" class="project-img"/>
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                Github
-              </button>
-              
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'" >
-                Live Demo
-              </button>
-            </div>
-          </div> -->
         </div>
       </div>
-      <img src="resources\images\arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
     </section>
+
+    <!-- Contact Div -->
     
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -303,6 +351,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer Div -->
     
     <footer>
       <nav>
